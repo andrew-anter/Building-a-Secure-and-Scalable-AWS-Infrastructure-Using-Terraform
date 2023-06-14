@@ -1,17 +1,18 @@
-# terraform-lab3
-### The problem statement
+# Building a Secure and Scalable AWS Infrastructure Using Terraform:
 
-<ins>using terraform</ins>
-1. create a vpc
-2. create 2 private subnets and 2 public subnets
-3. create an EC2 instance in each subnet
-4. create a nat-gateway for the private subnets
-5. create an internet gateway
-6. create the necessery routing tables for each instance
-7. create a private load balancer and a public load balancer
-8. reroute the traffic frorm the public insatances to the private load balancer using nginx reverse proxy 
-9. the end result shall be apache2 server is getting served by the private instances through the private load balancer which is routed from the public instances using nginx reverse proxy
-   when you hit the public load balancer dns.
+## The infrastructure created:
+<ol>
+<li>VPC</li>
+<li>2 private subnets and 2 public subnets</li>
+<li>C2 instance in each subnet</li>
+<li>NAT-gateway for the private subnets</li>
+<li>Internet gateway</li>
+<li>The necessery routing tables for each instance</li>
+<li>Private load balancer and a public load balancer</li>
+<li>Rerouting the traffic frorm the public insatances to the private load balancer using nginx reverse proxy </li>
+</ol>
+The end result shall be apache2 server is getting served by the private instances through the private load balancer which is routed from the public instances using nginx reverse proxy when you hit the public load balancer dns.
+
 ![Screenshot from 2023-05-26 20-40-54](https://github.com/andrew-anter/terraform-lab3/assets/56892364/9d114751-2542-40b7-8f03-de6f12dcb10f)
 
 ### Creating and working on workspace dev
